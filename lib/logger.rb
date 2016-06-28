@@ -10,7 +10,7 @@
 # A simple system for logging messages.  See Logger for more documentation.
 
 
-require 'monitor'
+#require 'monitor'
 
 
 # == Description
@@ -531,7 +531,7 @@ private
     attr_reader :filename
 
     class LogDeviceMutex
-      include MonitorMixin
+      #include MonitorMixin
     end
 
     def initialize(log = nil, opt = {})
